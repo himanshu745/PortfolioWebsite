@@ -2,7 +2,7 @@
   <div>
     <!-- Nav bar for web -->
     <nav class="navbar navbar-expand-md bg-light navbar-light">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="/"
         ><img class="logo" src="@/assets/logo.jpg/" alt="logo"
       /></a>
       <button

@@ -18,6 +18,7 @@
             <input
               type="text"
               id="fname"
+              ref="fName"
               name="firstname"
               placeholder="Your name.."
             />
@@ -25,6 +26,7 @@
             <input
               type="text"
               id="lname"
+              ref="lName"
               name="lastname"
               placeholder="Your last name.."
             />
@@ -38,10 +40,11 @@
             <textarea
               id="subject"
               name="subject"
+              ref="subject"
               placeholder="Write something.."
               style="height: 170px"
             ></textarea>
-            <input type="submit" value="Submit" />
+            <input type="submit" @click.prevent="prevent" value="Submit" />
           </form>
         </div>
         <div class="column">
@@ -57,8 +60,20 @@
 <script>
 export default {
   name: "contact",
+  methods: {
+    prevent: function (e) {
+      // `this` inside methods points to the Vue instance
+      e.preventDefault();
+      this.$refs["fName"].value = "";
+      this.$refs["lName"].value = "";
+      this.$refs["subject"].value = "";
+      // `event` is the native DOM event
+    },
+  },
 };
 </script>
+
+
 <style lang="scss" scoped>
 @import "../style/_variables.scss";
 

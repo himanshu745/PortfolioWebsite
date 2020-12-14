@@ -16,15 +16,12 @@
             shoot & travel.
           </h4>
           <p class="about">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in culpa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga. At vero eos et accusamus et
-            iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-            deleniti atque corrupti quos dolores et quas molestias excepturi
-            sint occaecati cupiditate non provident, similique sunt in culpa qui
-            officia deserunt mollitia animi, id est laborum et dolorum fuga.
+            Hi ,I am Himanshu a web and graphic designer from Christchurch,New
+            Zealand. Plain and Simple. I love Design, Passionate about thinking
+            out of the box and granting new horizon to web marketing. I have
+            developed for few start-ups and mid size business operation. I have
+            done graphic and ux design from YOOBEE College of design.
+            <br />That’s all about me and Thank you so much.
           </p>
         </div>
       </div>
