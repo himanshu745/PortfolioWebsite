@@ -4,6 +4,7 @@ import VueResource from "vue-resource";
 import VueRouter from "vue-router";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "animate.css";
 import "@morioh/v-lightbox/dist/lightbox.css";
 import Lightbox from "@morioh/v-lightbox";
 

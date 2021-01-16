@@ -1,55 +1,98 @@
 <template>
   <div>
-    <div class="container-fluid">
+    <div class="heading-box">
       <h2 class="intro">
-        Hi! I am Himanshu, a Designer based in of New Zealand and I <br />
+        Hi! I am Himanshu, a Designer based in New Zealand and I <br />
         design beautiful & functional websites and mobile applications
       </h2>
 
       <h4 class="sub-heading">See my work below,</h4>
     </div>
-    <div class="container-fluid text-center bg-grey">
+    <div class="container text-center bg-grey">
       <div class="row text-center">
-        <div class="col-sm-4">
-          <div class="thumbnail">
+        <div class="col-sm-12 col-md-4 p-0">
+          <div class="thumbnail" data-toggle="modal" data-target="#myModal">
             <img src="@/assets/coffee.jpg" alt="" />
-
-            <div class="overlayOne">
-              <a
-                class="btn-view"
-                href="https://www.behance.net/gallery/85109645/Coffee-packaging"
-                >View More</a
-              >
+            <img src="@/assets/coffee.jpg" hidden />
+            <div @click="showImage" class="overlayOne">
               <h3 class="coffee-paking">Coffee Packaging</h3>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-12 col-md-4 p-0">
           <div class="thumbnail">
-            <img class="img-view" src="@/assets/gls.jpg" alt="" />
+            <img class="img-view" src="@/assets/earthapp.jpg" alt="" />
 
             <div class="overlay">
-              <a
-                class="btn-view"
-                href="https://www.behance.net/gallery/109419633/Web-Design"
-                >View More</a
-              >
-              <h3 class="heading">Glass deliver websites</h3>
+              <a href="https://www.behance.net/gallery/109419633/Web-Design">
+                <h3 class="heading">Earthbudi App Design</h3>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-12 col-md-4 p-0">
           <div class="thumbnail">
-            <img src="@/assets/mobile.png" alt="" />
+            <img src="@/assets/rcslogo.jpg" alt="" />
 
             <div class="overlay-three">
               <a
-                class="btn-view"
                 href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
-                >View More</a
               >
-              <h3 class="heading-three">Earthbudi App Design</h3>
+                <h3 class="heading-three">Logo Design</h3>
+              </a>
             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-0">
+          <div class="thumbnail gutter-0">
+            <img src="@/assets/glassDelivery.jpg" alt="" />
+
+            <div class="overlay-four">
+              <a
+                href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
+              >
+                <h3 class="heading-three">GLASS DELIVERY</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-0">
+          <div class="thumbnail gutter-0">
+            <img src="@/assets/digiEvent.jpg" alt="" />
+
+            <div class="overlay-four">
+              <a
+                href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
+              >
+                <h3 class="heading-three">DIGI EVENT</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <img id="image" src="@/assets/coffee.jpg" alt="" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -64,25 +107,37 @@ export default {
   data() {
     return {};
   },
+  methods(showImage) {},
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../style/_variables.scss";
+
+.heading-box {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  padding: 70px 0% 50px 0%;
+  margin: 0 auto;
+}
+
 .intro {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
-  font-family: Roboto;
-  font-style: oblique;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 47px;
+  font-size: 400 40px;
+  font-family: "Playfair Display", "Open Sans", "Arial", sans-serif;
+  color: #222222;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-transform: none;
   align-items: center;
-  color: #535353;
 }
 .sub-heading {
   width: 80%;
@@ -94,19 +149,19 @@ export default {
   line-height: 47px;
   align-items: center;
   color: #535353;
+  margin-left: 9rem;
+  margin-bottom: 3rem;
 }
 
 .thumbnail[data-v-fed9ffe2] {
   padding: 0 0 0px 0;
   border: none;
   border-radius: 0;
-  margin-top: 5rem;
 }
 
 .thumbnail img {
   width: 100%;
   height: 100%;
-  margin-bottom: 10px;
 }
 
 .thumbnail {
