@@ -12,8 +12,8 @@
         <div class="column">
           <h2 class="name">Himanshu Rajpal</h2>
           <h4 class="detail">
-            A graphic designer based in of New Zealand, who loves to design,
-            shoot & travel.
+            A graphic designer based in New Zealand, who loves to design, shoot
+            & travel.
           </h4>
           <p class="about">
             Hi ,I am Himanshu a web and graphic designer from Christchurch,New

@@ -11,92 +11,229 @@
     <div class="container text-center bg-grey">
       <div class="row text-center">
         <div class="col-sm-12 col-md-4 p-0">
-          <div class="thumbnail" data-toggle="modal" data-target="#myModal">
+          <div class="thumbnail" data-toggle="modal" data-target="#coffeeModal">
             <img src="@/assets/coffee.jpg" alt="" />
-            <img src="@/assets/coffee.jpg" hidden />
-            <div @click="showImage" class="overlayOne">
-              <h3 class="coffee-paking">Coffee Packaging</h3>
+
+            <div class="overlayOne">
+              <span>
+                <h3 class="coffee-paking">Coffee Packaging</h3>
+                <p>Packing · Design</p>
+              </span>
             </div>
           </div>
         </div>
+        <!-- coffee Modal -->
+        <div class="modal fade bg-transparent" id="coffeeModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">Coffee Packaging</h4>
+              </div>
+              <div class="modal-body p-0">
+                <img
+                  :src="require(`@/assets/coffeeOne.jpg`)"
+                  class="img-fluid img-thumbnail"
+                  alt=""
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-sm-12 col-md-4 p-0">
-          <div class="thumbnail">
+          <div class="thumbnail" data-toggle="modal" data-target="#eathbudi">
             <img class="img-view" src="@/assets/earthapp.jpg" alt="" />
 
             <div class="overlay">
-              <a href="https://www.behance.net/gallery/109419633/Web-Design">
-                <h3 class="heading">Earthbudi App Design</h3>
-              </a>
+              <h3 class="heading">Earthbudi App Design</h3>
             </div>
           </div>
         </div>
+        <!-- Earthbudi Modal -->
+        <div class="modal fade bg-transparent" id="eathbudi" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body p-0">
+                <img
+                  :src="require(`@/assets/EarthBudy.jpg`)"
+                  class="img-fluid img-thumbnail"
+                  alt=""
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-sm-12 col-md-4 p-0">
-          <div class="thumbnail">
+          <div class="thumbnail" data-toggle="modal" data-target="#logo">
             <img src="@/assets/rcslogo.jpg" alt="" />
 
             <div class="overlay-three">
-              <a
-                href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
-              >
-                <h3 class="heading-three">Logo Design</h3>
-              </a>
+              <h3 class="heading-three">Logo Design</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- logo design -->
+        <div class="modal fade bg-transparent" id="logo" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body p-0">
+                <img
+                  :src="require(`@/assets/rcs.jpg`)"
+                  class="img-fluid img-thumbnail"
+                  alt=""
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-12 col-lg-6 p-0">
-          <div class="thumbnail gutter-0">
+          <div
+            class="thumbnail gutter-0"
+            data-toggle="modal"
+            data-target="#gls"
+          >
             <img src="@/assets/glassDelivery.jpg" alt="" />
 
-            <div class="overlay-four">
-              <a
-                href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
-              >
+            <a>
+              <div class="overlay-four">
                 <h3 class="heading-three">GLASS DELIVERY</h3>
-              </a>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- gls design -->
+        <div class="modal fade bg-transparent" id="gls" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">Glass Delivery Specialist</h4>
+              </div>
+              <div class="modal-body p-0">
+                <img
+                  :src="require(`@/assets/glsfinal.jpg`)"
+                  class="img-fluid img-thumbnail"
+                  alt=""
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-6 p-0">
-          <div class="thumbnail gutter-0">
-            <img src="@/assets/digiEvent.jpg" alt="" />
+        <div
+          class="col-sm-12 col-lg-6 p-0"
+          data-toggle="modal"
+          data-target="#digi"
+        >
+          <div
+            class="thumbnail gutter-0"
+            data-toggle="modal"
+            data-target="#digi"
+          >
+            <img src="@/assets/digieventArtboard-5.png" alt="" />
 
-            <div class="overlay-four">
-              <a
-                href="https://www.behance.net/gallery/85988883/Earthbudi-App-Design"
-              >
-                <h3 class="heading-three">DIGI EVENT</h3>
-              </a>
+            <div class="overlay-five">
+              <h3 class="heading-three">DIGI EVENT</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- digiEvent design -->
+        <div class="modal fade bg-transparent" id="digi" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">Glass Delivery Specialist</h4>
+              </div>
+              <div class="modal-body p-0">
+                <img
+                  :src="require(`@/assets/DigiEventFull.png`)"
+                  class="img-fluid img-thumbnail"
+                  alt=""
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">
-              &times;
-            </button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <img id="image" src="@/assets/coffee.jpg" alt="" />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <footer>
+      <h2 class="footer-text">
+        COPYRIGHT BRAND EXPONENTS 2020. MADE WITH IN ❤️ NEW ZEALAND
+        CHRISTCHURCH.
+      </h2>
+    </footer>
   </div>
 </template>
 
@@ -104,10 +241,38 @@
 export default {
   name: "/",
   components: {},
-  data() {
-    return {};
+  props: [],
+
+  data: function () {
+    return {
+      isShow: true,
+      isHidden: false,
+      images: [
+        {
+          id: 1,
+          name: "coffee Packing",
+          imageOne: require("@/assets/rcslogo.jpg"),
+          alt: "",
+        },
+        {
+          id: 2,
+          imageTwo: require("@/assets/rcslogo.jpg"),
+          alt: "",
+        },
+      ],
+    };
   },
-  methods(showImage) {},
+  methods: {
+    goBack() {
+      return this.$router.push({ path: "/" });
+    },
+
+    myModal() {},
+
+    toggleModal() {
+      this.isHidden = !this.isHidden;
+    },
+  },
 };
 </script>
 
@@ -131,7 +296,7 @@ export default {
   justify-content: center;
   margin-top: 2rem;
   display: flex;
-  font-size: 400 40px;
+  font-size: 400 35px;
   font-family: "Playfair Display", "Open Sans", "Arial", sans-serif;
   color: #222222;
   line-height: 60px;
@@ -244,7 +409,7 @@ export default {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #1f1f1f94;
+  background-color: rgba(35, 35, 35, 1);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -261,7 +426,7 @@ export default {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #008bbab7;
+  background-color: rgba(101, 162, 45, 1);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -278,7 +443,24 @@ export default {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #3d5c00de;
+  background-color: rgba(205, 207, 202, 1);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.thumbnail:hover .overlay-four {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay-four {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(176, 206, 214, 1);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -288,5 +470,44 @@ export default {
 .thumbnail:hover .overlay-three {
   bottom: 0;
   height: 100%;
+}
+
+.overlay-five {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(148, 213, 191, 1);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.thumbnail:hover .overlay-five {
+  bottom: 0;
+  height: 100%;
+}
+
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -2rem 35rem -1rem auto;
+}
+
+.modal-header .close[data-v-fed9ffe2] {
+  width: 2%;
+  padding: 1rem 1rem;
+  margin: -2rem 35rem -1rem auto;
+}
+
+footer {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  padding: 3rem;
+  font-size: 1rem;
+  color: #e2e2e2;
 }
 </style>
