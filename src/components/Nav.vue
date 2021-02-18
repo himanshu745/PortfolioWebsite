@@ -38,11 +38,16 @@
               class="yt_link col-md-3"
               ><i class="fab fa-behance-square icon"></i
             ></a>
-            <a href="" class="yt_link col-md-3"
+            <a
+              href="https://github.com/himanshu745/PortfolioWebsite"
+              class="yt_link col-md-3"
               ><i class="fab fa-github-square"></i>
             </a>
 
-            <a href="" class="yt_link col-md-3">
+            <a
+              href="https://www.linkedin.com/in/himanshu-rajpal-ab73a0187/"
+              class="yt_link col-md-3"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </li>

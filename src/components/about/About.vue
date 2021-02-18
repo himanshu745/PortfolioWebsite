@@ -5,7 +5,7 @@
       <div class="row">
         <div class="column">
           <div class="myImage">
-            <img class="c-image" src="@/assets/contact.jpg/" alt="image" />
+            <img class="c-image" src="@/assets/profilePic.jpg/" alt="image" />
           </div>
         </div>
 

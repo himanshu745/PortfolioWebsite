@@ -515,4 +515,11 @@ footer {
   font-size: 1rem;
   color: #e2e2e2;
 }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .sub-heading {
+    margin-left: 0rem;
+  }
+}
 </style>
