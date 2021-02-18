@@ -26,6 +26,10 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <h2 class="footer-text">MADE WITH ❤️ IN NEW ZEALAND CHRISTCHURCH.</h2>
+    </footer>
   </div>
 </template>
 
@@ -101,6 +105,18 @@ export default {
   font-weight: 200;
   font-style: initial;
   line-height: 1.6;
+}
+
+footer {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  padding: 3rem;
+  font-size: 1rem;
+  color: #e2e2e2;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

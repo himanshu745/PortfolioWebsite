@@ -30,12 +30,7 @@
               name="lastname"
               placeholder="Your last name.."
             />
-            <!-- <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select> -->
+
             <label for="subject">Subject</label>
             <textarea
               id="subject"
@@ -54,6 +49,10 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <h2 class="footer-text">MADE WITH ❤️ IN NEW ZEALAND CHRISTCHURCH.</h2>
+    </footer>
   </div>
 </template>
 
@@ -134,6 +133,18 @@ input[type="submit"]:hover {
 
 .c-image {
   width: 120%;
+}
+
+footer {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  padding: 3rem;
+  font-size: 1rem;
+  color: #e2e2e2;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

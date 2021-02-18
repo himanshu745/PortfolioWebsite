@@ -69,7 +69,7 @@
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Earthbudi</h4>
               </div>
               <div class="modal-body p-0">
                 <img
@@ -110,7 +110,7 @@
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Logo Design</h4>
               </div>
               <div class="modal-body p-0">
                 <img
@@ -204,7 +204,7 @@
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
-                <h4 class="modal-title">Glass Delivery Specialist</h4>
+                <h4 class="modal-title">DIGI EVENT</h4>
               </div>
               <div class="modal-body p-0">
                 <img
@@ -229,10 +229,7 @@
     </div>
 
     <footer>
-      <h2 class="footer-text">
-        COPYRIGHT BRAND EXPONENTS 2020. MADE WITH IN ❤️ NEW ZEALAND
-        CHRISTCHURCH.
-      </h2>
+      <h2 class="footer-text">MADE WITH ❤️ IN NEW ZEALAND CHRISTCHURCH.</h2>
     </footer>
   </div>
 </template>
@@ -493,10 +490,18 @@ export default {
   margin: -2rem 35rem -1rem auto;
 }
 
-.modal-header .close[data-v-fed9ffe2] {
-  width: 2%;
+.modal-header .close {
+  display: contents;
   padding: 1rem 1rem;
-  margin: -2rem 35rem -1rem auto;
+  margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  display: flex;
+  justify-items: center;
+  margin-right: 1rem;
 }
 
 footer {
